@@ -1,0 +1,183 @@
+/* 마진 패딩 초기화 */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* 페이지 기본 글꼴과 크기 설정 */
+
+body {
+  /* make it look decent enough */
+  background: #ffffff;
+  color: black;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+img {
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* <a> 태그 기본 설정 */
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: #222222;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #222222;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #222222;
+}
+
+a:active {
+  text-decoration: none;
+  color: #222222;
+}
+
+/* 상단 헤더 */
+#top {
+  position: relative;
+  width: 1000px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+#top h3 {
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  font-size: 16px;
+}
+
+#top #top_menu {
+  float: right;
+  margin: 30px 60px 0 0;
+}
+
+#top #top_menu li {
+  display: inline;
+}
+
+#menu_bar {
+  height: 60px;
+  background-color: #443e58;
+  font-size: 16px;
+}
+
+#menu_bar ul {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 14px 0 0 40px;
+}
+
+#menu_bar li {
+  display: inline;
+  margin-left: 90px;
+  color: white;
+}
+
+#menu_bar a:link {
+  color: white;
+}
+
+#menu_bar a:hover {
+  color: white;
+}
+
+#menu_bar a:visited {
+  color: white;
+}
+
+#menu_bar a:active {
+  color: white;
+}
+
+/* 푸터 전체 스타일 */
+footer {
+  background-color: #f5f5f5;
+  padding: 5px 0;
+}
+
+/* 푸터 컨테이너 스타일 */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* 푸터 컬럼 스타일 */
+.footer-column {
+  width: 30%;
+  margin: 10px 0;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #888;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #555;
+}
+
+/* 푸터 하단 스타일 */
+.footer-bottom {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+.social-media-icons a {
+  color: #fff;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.social-media-icons a:hover {
+  color: #aaa;
+}
