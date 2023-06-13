@@ -13,14 +13,16 @@
      </div>
      <!-- 네비게이션 -->
      <div class="slideshow_nav">
-       <a href="#" class="next"><i class="fa-solid fa-circle-chevron-right"></i></a>
-       <a href="#" class="prev"><i class="fa-solid fa-circle-chevron-left"></i></a>
+       <a href="#" class="next"><i class="fa-sharp fa-solid fa-caret-right"></i></a>
+       <a href="#" class="prev">
+         <left class="fa-sharp fa-solid fa-caret-left"></i>
+       </a>
      </div>
      <!-- 인디케이터 -->
      <div class="indicator">
-       <a href="#" class="item"><i class="fa-solid fa-circle-dot"></i></a>
-       <a href="#"><i class="fa-solid fa-circle-dot"></i></a>
-       <a href="#"><i class="fa-solid fa-circle-dot"></i></a>
-       <a href="#"><i class="fa-solid fa-circle-dot"></i></a>
+       <a href="#" class="item"><i class="fa-solid fa-circle fa-2xs"></i></a>
+       <a href="#"><i class="fa-solid fa-circle fa-2xs"></i></i></a>
+       <a href="#"><i class="fa-solid fa-circle fa-2xs"></i></i></a>
+       <a href="#"><i class="fa-solid fa-circle fa-2xs"></i></i></a>
      </div>
    </div>

@@ -36,7 +36,7 @@
     <section>
         <div id="board_box">
             <h3>
-                게시판 > 목록보기
+                제품 > 목록
             </h3>
             <ul id="board_list">
                 <!-- <li>

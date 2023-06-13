@@ -28,7 +28,7 @@
 	<section>
 		<div id="board_box">
 			<h3 class="title">
-				게시판 > 내용보기
+				제품 > 내용
 			</h3>
 			<?php
 			$num = (isset($_GET["num"]) && $_GET["num"] != '') ? $_GET["num"] : '';
@@ -180,7 +180,7 @@
 					<li>
 						<?php
 						// 로그인한 사용자인 경우에만 수정 버튼 표시
-						if (isset($_SESSION['userid']) && $_SESSION['userid'] === "$id") {
+						if ((isset($_SESSION['userlevel']) && $_SESSION['userlevel'] == '1')) {
 						?>
 							<form action=" board_form.php" method="post">
 								<button class="btn btn-outline-success">수정</button>
@@ -195,7 +195,7 @@
 					<li>
 						<?php
 						// 로그인한 사용자인 경우에만 수정 버튼 표시
-						if (isset($_SESSION['userid']) && $_SESSION['userid'] === "$id") {
+						if ((isset($_SESSION['userlevel']) && $_SESSION['userlevel'] == '1')) {
 						?>
 							<form action="board_insert.php" method="post">
 								<button class="btn btn-outline-danger">삭제</button>

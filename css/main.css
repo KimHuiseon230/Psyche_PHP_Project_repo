@@ -17,12 +17,12 @@
 
 #announce {
   margin-right: 30px;
-  width: 500px;
+  width: 600px;
 }
 
 #announce #ad {
   flex: 1;
-  margin: 0 2rem 0 0;
+  /* margin: 0 2rem 0 0; */
 }
 
 #month span {
@@ -41,12 +41,13 @@ h4 {
   color: var(--contact-text-color);
   margin: 0.6rem 0 0.1rem;
   padding: 0.6rem;
-  border-bottom: 0.06rem solid var(--line-grey);
+  border-bottom: 0.15rem solid rgb(203, 203, 203);
+
 }
 
 #exibition {
   width: 190px;
-  margin: 0 2rem 0 0;
+  /* margin: 0 2rem 0 0; */
 }
 
 image {
@@ -56,7 +57,7 @@ image {
 #main_slide {
   display: flex;
   justify-content: left;
-  padding-left: 300px;
+  padding-left: 250px;
   margin-top: 10px;
 }
 
@@ -73,8 +74,8 @@ image {
 }
 
 .separator {
-  width: 57%;
-  border-top: 1px solid #000;
+  width: 67%;
+  border-top: 1px solid #a6a6a6;
   margin-top: 20px;
   margin-bottom: 20px;
 }

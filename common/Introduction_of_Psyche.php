@@ -79,31 +79,50 @@
   <section>
     <div class="container">
       <div class="row justify-content-center align-items-center mt-3">
-        <p class="content">“ Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure adipisci dolores in, saepe nobis maiores?”</p>
-        <p class="title-sub">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa</p>
+        <p class="content">“프시케는 동물 실험 과 인공적인 화학 성분을 최대한으로 줄여 자연친화적인 제품을 직접 손으로 만듭니다.”</p>
+        <p class="title-sub">지구와 모두를 도울수 있는 것들을 함께 이루며 성장 하는 것을 통해 기업 윤리와 신념을 갖고 있습니다.</p>
       </div>
       <!-- 첫번째 이미지 -->
       <div class="image-with-caption">
         <img src="../img/smaple_img.png" alt="">
         <div>
-          <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa officiis quia debitis suscipit earum reiciendis at omnis. Est, porro.</figcaption>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <figcaption class="content">프시케는 어떤 이유에도 제품을 만드는 과정에서 동물실험을 하지 않으며 해당 과정을 거친 원재료 또한 사용하지 않습니다.</figcaption>
+          <p class="title-sub m-4">지구와 모두를 도울수 있는 것들을 함께 이루며 성장 하는 것을 통해 기업 윤리와 신념을 갖고 있습니다 .</p>
         </div>
       </div>
       <!-- 두번째 이미지 -->
       <div class="image-with-caption">
         <img src="../img/smaple_img.png" alt="">
         <div>
-          <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa officiis quia debitis suscipit earum reiciendis at omnis. Est, porro.</figcaption>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <figcaption class="content">프시케는 좀더 특별한 추억과 마음을 전달할수 있는 특별한 제품을 선보입니다.</figcaption>
+          <p class="title-sub m-4">사용자의 커스텀에 맞춰 바꿀수있는 제품들로 소중한 마음을 전해보세요.</p>
         </div>
       </div>
       <!-- 세번째 이미지 -->
       <div class="image-with-caption">
         <img src="../img/smaple_img.png" alt="">
         <div>
-          <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa officiis quia debitis suscipit earum reiciendis at omnis. Est, porro.</figcaption>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <div>
+            <figcaption class="content">신선함 그리고 유지성은 저희 프시케 철학의 핵심입니다.</figcaption>
+            <p class="title-sub m-4">신선한 과일, 채소, 에센셜 오일, 최소한의 보존제와
+              안전한 인공 성분을 사용하여 제품을 선보입니다.
+              러쉬의 모든 제품은 베지테리언(Vegetarian)이며,
+              그 중 약 90%는 식물성 원료로만 만든 비건(Vegan)입니다.</p>
+          </div>
+        </div>
+      </div>
+      <!-- 네번째 이미지 -->
+      <div class="image-with-caption">
+        <img src="../img/smaple_img.png" alt="">
+        <div>
+          <div>
+            <figcaption class="content">이 모든 것은
+              ‘고객은 항상 옳다’는 믿음과
+              프시케의 핵심 가치인
+              직원들의 진심이 모여 얻은
+              결실입니다 </figcaption>
+            <p class="title-sub m-4">앞으로도 프시케는 아름답고 좋은 제품을 만들겠다는 진정성을 갖은 핵심가치를 두고 여러분들과 함께 성장하고 기억할수 있는 기업이 되도록 노력하겠습니다.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -111,6 +130,7 @@
     <footer>
       <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/footer.php"; ?>
     </footer>
+
 </body>
 
 </html>

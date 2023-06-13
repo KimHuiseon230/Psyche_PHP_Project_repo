@@ -27,6 +27,7 @@ $userpoint = (isset($_SESSION['userpoint']) && $_SESSION['userpoint'] != "") ? $
       <?php }
       if ($userid) { ?>
         <?= $userid . "(" . $username . ")님 " . "Lv:" . $userlevel . " Po:" . $userpoint  ?>
+        <li><a href="http://<?= $_SERVER['HTTP_HOST'] . '/php_source/chap11/message/message_form.php' ?>">쪽지</a></li>
         <li><a href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/member/member_update_form.php' ?>">회원정보수정</a></li>
         <li><a href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/login/logout.php' ?>">로그아웃</a></li>
         <li>- </li>

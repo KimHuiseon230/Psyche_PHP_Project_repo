@@ -43,7 +43,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  color: aquamarine;
+  color: #6146ba;
   font-size: 60px;
   /* 중앙으로 배치 */
   transform: translate(-50%, -50%);
@@ -52,11 +52,11 @@
 
 /* 네비게이션 바를 좌우로 이동*/
 .slideshow_nav a.prev {
-  margin-left: -650px;
+  margin-left: -470px;
 }
 
 .slideshow_nav a.next {
-  margin-left: 650px;
+  margin-left: 470px;
 }
 
 /* 인디케이터 중앙에 배치하기 */
@@ -70,14 +70,14 @@
 
 .indicator a {
   display: inline-block;
-  color: aquamarine;
+  color: rgb(168, 168, 169);
   font-size: 20px;
   opacity: 1;
   padding: 5px;
 }
 
 .indicator a.item {
-  color: blueviolet;
+  color: rgb(255, 255, 255);
 }
 
 /* 두번쨰 슬라이드 */
@@ -93,7 +93,7 @@
 .slide-wrapper {
   display: flex;
   width: 300%;
-  height: 100%;
+  height: 90%;
   transition: transform 1s;
 }
 

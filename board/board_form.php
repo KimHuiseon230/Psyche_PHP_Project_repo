@@ -28,7 +28,7 @@
 		include_once $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
 		include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/create_table.php";
 		create_table($conn, "board");
-		create_table($conn, "board_ripple"); 
+		create_table($conn, "board_ripple");
 		?>
 
 	</header>
