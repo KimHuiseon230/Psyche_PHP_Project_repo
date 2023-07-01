@@ -1,5 +1,5 @@
 <?php
-include_once  $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
+include_once  $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
 $sql = "select *from members order by name";
 $stmt = $conn->prepare($sql);
 $result = $stmt->execute();
@@ -21,14 +21,14 @@ if (!$result) {
 <head>
   <meta charset="utf-8">
   <title>회원리스트</title>
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/header.css' ?>">
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/slide.css?er=1' ?>">
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/common.css' ?>">
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/header.css' ?>">
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/slide.css?er=1' ?>">
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/common.css' ?>">
   <!-- 공통 선언 js -->
-  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/slide.js' ?>"></script>
+  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/slide.js' ?>"></script>
   <!-- 따로 선언부 -->
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/member.css' ?>">
-  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/member/js/member.js' ?>"></script>
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/member.css' ?>">
+  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/member/js/member.js' ?>"></script>
   <!-- 부트스트랩 CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- 부트스트랩 JavaScript Bundle with Popper -->
@@ -39,7 +39,7 @@ if (!$result) {
 <body>
   <header>
     <?php
-    include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/header.php";    ?>
+    include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php";    ?>
   </header>
   <section>
     <div class="container w-70">
@@ -76,7 +76,7 @@ if (!$result) {
             <td>{$row['level']}</td>
             <td>{$row['point']}</td>
             <td><button type ='button'
-            onclick='location.href=\"http://{$_SERVER['HTTP_HOST']}/project_php/member/member_delete.php?num={$row['num']}\"'>삭제</button></td>
+            onclick='location.href=\"http://{$_SERVER['HTTP_HOST']}/Psyche_PHP_Project/member/member_delete.php?num={$row['num']}\"'>삭제</button></td>
           </tr>";
           }
           ?>
@@ -85,7 +85,7 @@ if (!$result) {
     </div>
   </section>
   <footer>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/footer.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
   </footer>
 </body>
 

@@ -3,14 +3,14 @@
 
 <head>
   <title>회원 가입 화면</title>
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/header.css' ?>">
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/project_php/css/slide.css?v=<?= date('Ymdhis') ?>">
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/common.css' ?>">
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/header.css' ?>">
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/css/slide.css?v=<?= date('Ymdhis') ?>">
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/common.css' ?>">
   <!-- 공통 선언 js -->
-  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/slide.js' ?>"></script>
+  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/slide.js' ?>"></script>
   <!-- 따로 선언부 -->
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/member.css' ?>">
-  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/member.js?v=1' ?>"></script>
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/member.css' ?>">
+  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/member.js?v=1' ?>"></script>
   <!-- 구글폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,18 +27,18 @@
 <body>
   <header>
     <?php
-    include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/header.php";
-    include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/slide.php";
-    include_once $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
-    include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/create_table.php";
+    include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php";
+    include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+    include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/create_table.php";
     create_table($conn, "members");
     ?>
   </header>
-  <div class="container w-50 border p-5 my-3 rounded-5">
+  <div class="container w-50  border p-5 my-3 rounded-5">
     <div id=" main_content">
       <div id="join_box">
         <form name="member_form" id="member_form" method="post" action="./member_insert.php">
-          <h2 style="text-align: center;">회원 가입</h2>
+          <h4 class="mb-3">회원가입</h4>
+          <h5>회원 정보 입력</h5>
           <table class="table">
             <colgroup>
               <col width=15%>
@@ -46,10 +46,11 @@
             </colgroup>
             <tr>
               <input type="hidden" name="id_chk" value="0">
+
               <div class="form id">
                 <div class="col1">아이디</div>
                 <div class="col2">
-                  <input type="text" name="id">
+                  <input type="text" name="id" class="form-control">
                 </div>
                 <div class="col3">
                   <!-- <form name="member_form" method="GET" action="./member_check_id.php"> -->
@@ -61,21 +62,21 @@
             <div class="form">
               <div class="col1">비밀번호</div>
               <div class="col2">
-                <input type="password" name="pass">
+                <input type="password" name="pass" class="form-control">
               </div>
             </div>
             <div class="clear"></div>
             <div class="form">
               <div class="col1">비밀번호 확인</div>
               <div class="col2">
-                <input type="password" name="pass_confirm">
+                <input type="password" name="pass_confirm" class="form-control" placeholder="비밀번호 확인을 위해 다시한번 입력 해 주세요">
               </div>
             </div>
             <div class="clear"></div>
             <div class="form">
               <div class="col1">이름</div>
               <div class="col2">
-                <input type="text" name="name">
+                <input type="text" name="name" class="form-control" placeholder="이름을 입력해 주세요">
               </div>
             </div>
             <div class="clear"></div>
@@ -97,7 +98,7 @@
             <div class="form">
               <div class="col1">우편번호</div>
               <div class="col2">
-                <input type="text" name="zipcode" id="f_zipcode">
+                <input type="text" name="zipcode" id="f_zipcode" class="form-control">
               </div>
               <div class="col3">
                 <button type="button" id="btn_zipcode" class="btn btn-secondary btn-sm">우편번호찾기</button>
@@ -112,14 +113,14 @@
               <div class="form">
                 <div class="col1">주소</div>
                 <div class="col2">
-                  <input type="text" name="addr1" id="f_addr1">
+                  <input type="text" name="addr1" id="f_addr1" class="form-control">
                 </div>
               </div>
               <div class="clear"></div>
               <div class="form">
                 <div class="col1">상세주소</div>
                 <div class="col2">
-                  <input type="text" name="addr2" id="f_addr2" placeholder="상세주소를 입력">
+                  <input type="text" name="addr2" id="f_addr2" class="form-control" placeholder="상세주소를 입력">
                 </div>
               </div>
             </table>
@@ -140,7 +141,7 @@
     </div> <!-- main_content -->
   </div>
   <footer>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/footer.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
   </footer>
 </body>
 

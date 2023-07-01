@@ -4,28 +4,28 @@
 <head>
 	<meta charset="utf-8">
 	<title>수신/송신 쪽지 보내기</title>
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/header.css' ?>">
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/project_php/css/slide.css?v=<?= date('Ymdhis') ?>">
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/common.css' ?>">
+	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/header.css' ?>">
+	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/css/slide.css?v=<?= date('Ymdhis') ?>">
+	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/common.css' ?>">
 	<!-- 공통 선언 js -->
-	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/slide.js' ?>"></script>
+	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/slide.js' ?>"></script>
 	<!-- 따로 선언부 -->
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/message.css' ?>">
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/board.css' ?>">
-	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/message.js' ?>"></script>
+	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/message.css' ?>">
+	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/board.css' ?>">
+	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/message.js' ?>"></script>
 </head>
 
 <body>
 	<header>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/header.php"; ?>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/slide.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/slide.php"; ?>
 	</header>
 	<section>
 		<div id="message_box">
 			<h3 class="title">
 				<?php
 				//먼저 선언을 해야하는 파일들
-				include_once  $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
+				include_once  $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
 				$mode = (isset($_GET['mode']) && $_GET['mode'] != '') ? (int)$_GET['mode'] : '';
 				$num = (isset($_GET['num']) && $_GET['num'] != '') ? (int)$_GET['num'] : '';
 
@@ -81,7 +81,7 @@
 		</div> <!-- message_box -->
 	</section>
 	<footer>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/footer.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
 	</footer>
 </body>
 

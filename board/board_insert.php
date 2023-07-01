@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
 session_start();
 $userid = (isset($_SESSION["userid"]) && $_SESSION["userid"] != '') ? $_SESSION["userid"] : '';
 $username = (isset($_SESSION["username"]) && $_SESSION["username"] != '') ? $_SESSION["username"] : '';

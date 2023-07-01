@@ -4,25 +4,25 @@
    </div>
    <div class="slide-wrapper">
      <div class="slide">
-       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/img/001.jpg" ' ?>" alt="1">
+       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/img/001.jpg" ' ?>" alt="1">
      </div>
      <div class="slide">
-       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/img/002.jpg" ' ?>" alt="1">
+       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/img/002.jpg" ' ?>" alt="1">
      </div>
      <div class="slide">
-       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/img/003.jpg" ' ?>" alt="1">
+       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/img/003.jpg" ' ?>" alt="1">
      </div>
      <div class="slide">
-       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/img/004.jpg" ' ?>" alt="1">
+       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/img/004.jpg" ' ?>" alt="1">
      </div>
      <div class="slide">
-       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/img/005.jpg" ' ?>" alt="1">
+       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/img/005.jpg" ' ?>" alt="1">
      </div>
      <div class="slide">
-       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/img/006.jpg" ' ?>" alt="1">
+       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/img/006.jpg" ' ?>" alt="1">
      </div>
      <div class="slide">
-       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/img/007.jpg" ' ?>" alt="1">
+       <img src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/img/007.jpg" ' ?>" alt="1">
      </div>
    </div>
    <button class="prev-btn"> <a href="#" class="item"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></i></a></button>

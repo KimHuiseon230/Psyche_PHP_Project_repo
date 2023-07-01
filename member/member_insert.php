@@ -1,7 +1,7 @@
 <?php
 // var_dump($_POST);
 //conn의 내용을 가져옴 
-include_once  $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
+include_once  $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
 
 $id = (isset($_POST["id"])) ? $_POST["id"] : '';
 $pass = (isset($_POST["pass"])) ? $_POST["pass"] : '';
@@ -41,12 +41,12 @@ $result = $stmt->execute();
 if (!$result) {
   die("<script>
       alert('데이터 삽입 오류');
-      self.location.href = 'http://{$_SERVER['HTTP_HOST']}/project_php/index.php'
+      self.location.href = 'http://{$_SERVER['HTTP_HOST']}/Psyche_PHP_Project/index.php'
     </script>");
 }
 
 echo "
   <script>
-    self.location.href = 'http://{$_SERVER['HTTP_HOST']}/project_php/index.php'
+    self.location.href = 'http://{$_SERVER['HTTP_HOST']}/Psyche_PHP_Project/index.php'
   </script>
 ";

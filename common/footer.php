@@ -6,7 +6,7 @@
         <li><a href="#">개인정보처리방침</a></li>
         <li><a href="#">영상정보관리지침</a></li>
         <li><a href="#">이용약관</a></li>
-        <li><a href="#"><img id="imglog" style="width: 100px; height: auto;" src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php//img/XXmain_log.png" ' ?>" alt=""></a></li>
+        <li><a href="#"><img id="imglog" style="width: 100px; height: auto;" src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project//img/XXmain_log.png" ' ?>" alt=""></a></li>
       </ul>
     </div>
     <div class="footer-column" style="width: 500px;">

@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
 
 $id = (isset($_POST["id"]) && $_POST["id"] != '') ? $_POST["id"] : "";
 $pass = (isset($_POST["pass"]) && $_POST["pass"] != '') ? $_POST["pass"] : "";
@@ -43,6 +43,6 @@ $_SESSION["userpoint"] = $row["point"];
 
 echo "
       <script>
-        self.location.href = 'http://{$_SERVER['HTTP_HOST']}/project_php/index.php'
+        self.location.href = 'http://{$_SERVER['HTTP_HOST']}/Psyche_PHP_Project/index.php'
       </script>
     ";

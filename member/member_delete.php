@@ -1,5 +1,5 @@
 <?php
-include_once  $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
+include_once  $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
 
 $num = (isset($_GET["num"]) and is_numeric($_GET["num"])) ? $_GET["num"] : '';
 $sql = "delete from members where num=:num";
@@ -17,7 +17,7 @@ if (!$result) {
 echo "
   <script>
   alert('성공적으로 삭제되었습니다');
-    self.location.href = 'http://{$_SERVER['HTTP_HOST']}/project_php/member/member_list.php'
+    self.location.href = 'http://{$_SERVER['HTTP_HOST']}/Psyche_PHP_Project/member/member_list.php'
   </script>
 ";
 // mysqli_close($conn);

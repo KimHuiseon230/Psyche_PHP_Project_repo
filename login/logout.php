@@ -8,6 +8,6 @@ unset($_SESSION["userpoint"]);
 echo ("
     <script>
       alert('성공적으로 로그아웃 되었습니다.');
-      self.location.href = 'http://{$_SERVER['HTTP_HOST']}/project_php/index.php'
+      self.location.href = 'http://{$_SERVER['HTTP_HOST']}/Psyche_PHP_Project/index.php'
     </script>
 ");

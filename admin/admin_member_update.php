@@ -12,7 +12,7 @@ if ($userlevel != 1) {
         ");
     exit;
 }
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
 
 $num   = $_GET["num"];
 $level = $_POST["level"];

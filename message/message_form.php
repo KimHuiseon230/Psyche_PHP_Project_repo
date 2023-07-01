@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>쪽지 </title>
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/header.css' ?>">
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/project_php/css/slide.css?v=<?= date('Ymdhis') ?>">
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/common.css' ?>">
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/header.css' ?>">
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/css/slide.css?v=<?= date('Ymdhis') ?>">
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/common.css' ?>">
   <!-- 공통 선언 js -->
-  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/slide.js' ?>"></script>
+  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/slide.js' ?>"></script>
   <!-- 따로 선언부 -->
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/message.css' ?>">
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/board.css' ?>">
-  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/message.js' ?>"></script>
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/message.css' ?>">
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/board.css' ?>">
+  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/message.js' ?>"></script>
   <!-- 부트스트랩 CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- 부트스트랩 JavaScript Bundle with Popper -->
@@ -22,10 +22,10 @@
 
 <body>
   <header>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/header.php";
-    include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/slide.php";
-    include_once $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
-    include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/create_table.php";
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php";
+    include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/slide.php";
+    include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+    include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/create_table.php";
     create_table($conn, "message");
     ?>
   </header>
@@ -34,7 +34,7 @@
     if (!$userid) {
       die("<script>
                 alert('로그인 후 이용해주세요!');
-                self.location.href = 'http://{$_SERVER['HTTP_HOST']}/project_php/login/login_form.php';
+                self.location.href = 'http://{$_SERVER['HTTP_HOST']}/Psyche_PHP_Project/login/login_form.php';
                 </script>
             ");
     }
@@ -76,7 +76,7 @@
     </div> <!-- message_box -->
   </section>
   <footer>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/footer.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
   </footer>
 </body>
 

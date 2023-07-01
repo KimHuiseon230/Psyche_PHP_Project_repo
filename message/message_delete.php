@@ -1,6 +1,6 @@
 ﻿<!-- DB에 저장된 쪽지 삭제 -->
 <?php
-include_once  $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
+include_once  $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
 
 $num = (isset($_GET["num"]) and is_numeric($_GET["num"])) ? (int)$_GET["num"] : '';
 $mode = (isset($_GET["mode"]) and is_numeric($_GET["mode"])) ? (int)$_GET["mode"] : '';

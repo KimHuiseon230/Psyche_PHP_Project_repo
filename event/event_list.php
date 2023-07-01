@@ -1,15 +1,15 @@
 <head>
     <meta charset="utf-8">
     <title>Psyche</title>
-    <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/header.css' ?>">
-    <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/project_php/css/slide.css?v=<?= date('Ymdhis') ?>">
-    <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/common.css' ?>">
+    <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/header.css' ?>">
+    <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/css/slide.css?v=<?= date('Ymdhis') ?>">
+    <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/common.css' ?>">
     <!-- 공통 선언 js -->
-    <script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/slide.js' ?>"></script>
+    <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/slide.js' ?>"></script>
     <!-- 따로 선언 -->
-    <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/event.css' ?>">
-    <script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/event.js' ?>"></script>
-    <script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/event_execl.js' ?>"></script>
+    <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/event.css' ?>">
+    <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/event.js' ?>"></script>
+    <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/event_execl.js' ?>"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -20,11 +20,11 @@
 <body>
     <header>
         <?php
-        include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/header.php";
-        include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/slide.php";
-        include_once $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
-        include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/create_table.php";
-        include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/page_lib.php";
+        include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php";
+        include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/slide.php";
+        include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+        include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/create_table.php";
+        include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/page_lib.php";
         create_table($conn, "event");
         ?>
     </header>
@@ -46,7 +46,7 @@
 
                 $page = (isset($_GET["page"]) && is_numeric($_GET["page"]) && $_GET["page"] != "") ? $_GET["page"] : 1;
 
-                include_once $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
+                include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
                 $sql = "select count(*) as cnt from event order by num desc";
                 $stmt = $conn->prepare($sql);
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -129,7 +129,7 @@
         </div>
     </section>
     <footer>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/footer.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
     </footer>
 </body>
 

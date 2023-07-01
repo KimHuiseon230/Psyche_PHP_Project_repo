@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
 $id = (isset($_POST["id"]) && $_GET["id"] != '') ? $_GET["id"] : '';
 $userid    = (isset($_SESSION['userid']) && $_SESSION['userid'] != "") ? $_SESSION['userid'] : "";
 $userlevel = (isset($_SESSION['userlevel']) && $_SESSION['userlevel'] != "") ? $_SESSION['userlevel'] : "";
@@ -12,21 +12,21 @@ $username  = (isset($_SESSION['username']) && $_SESSION['username'] != "") ? $_S
 <head>
 	<meta charset="utf-8">
 	<title>Psyche</title>
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/header.css' ?>">
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/project_php/css/slide.css?v=<?= date('Ymdhis') ?>">
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/common.css' ?>">
+	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/header.css' ?>">
+	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/css/slide.css?v=<?= date('Ymdhis') ?>">
+	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/common.css' ?>">
 	<!-- 공통 선언 js -->
-	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/slide.js' ?>"></script>
+	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/slide.js' ?>"></script>
 	<!-- 따로 선언 -->
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/css/board.css' ?>">
-	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/slide.js' ?>"></script>
-	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/project_php/js/board.js' ?>"></script>
+	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/board.css' ?>">
+	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/slide.js' ?>"></script>
+	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/board.js' ?>"></script>
 </head>
 
 <body>
 	<header>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/header.php"; ?>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/slide.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/slide.php"; ?>
 	</header>
 	<section>
 		<div id="board_box">
@@ -34,7 +34,7 @@ $username  = (isset($_SESSION['username']) && $_SESSION['username'] != "") ? $_S
 				게시판 > 글 쓰기
 			</h3>
 			<?php
-			include_once $_SERVER['DOCUMENT_ROOT'] . "/project_php/common/db_connect.php";
+			include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
 
 
 			$num = (isset($_GET["num"]) && $_GET["num"] != '') ? $_GET["num"] : '';
