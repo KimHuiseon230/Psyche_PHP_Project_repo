@@ -1,5 +1,5 @@
 <?php
-include_once  $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+include_once  $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 $sql = "select *from members order by name";
 $stmt = $conn->prepare($sql);
 $result = $stmt->execute();
@@ -39,7 +39,7 @@ if (!$result) {
 <body>
   <header>
     <?php
-    include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php";    ?>
+    include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_header.php";    ?>
   </header>
   <section>
     <div class="container w-70">
@@ -85,7 +85,7 @@ if (!$result) {
     </div>
   </section>
   <footer>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_footer.php"; ?>
   </footer>
 </body>
 

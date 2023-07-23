@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 
 $id = (isset($_POST["id"]) && $_POST["id"] != '') ? $_POST["id"] : "";
 $pass = (isset($_POST["pass"]) && $_POST["pass"] != '') ? $_POST["pass"] : "";

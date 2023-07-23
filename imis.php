@@ -1,5 +1,5 @@
 <?php
-include_once  $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+include_once  $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 //1. 현재페이지 요청을 받는다.
 $page = (isset($_GET['page']) && $_GET['page'] != '' && is_numeric($_GET['page'])) ? $_GET['page'] : 1;
 //2. 전체게시물 조회 쿼리 : select count(*) as cnt from customer; (34개)
@@ -41,7 +41,7 @@ $rows = $stmt->fetchAll();
 <body>
    <header>
       <?php
-      include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php";
+      include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_header.php";
       include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/slide.php";
       include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/page_lib.php";
       ?>
@@ -81,7 +81,7 @@ $rows = $stmt->fetchAll();
    </div>
    </section>
    <footer>
-      <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_footer.php"; ?>
    </footer>
 </body>
 

@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 
 $num = (isset($_GET["num"]) and is_numeric($_GET["num"])) ? $_GET["num"] : '';
 $page = (isset($_GET["page"]) and is_numeric($_GET["page"])) ? $_GET["page"] : '';

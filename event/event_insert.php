@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 session_start();
 $userid = (isset($_SESSION["userid"]) && $_SESSION["userid"] != '') ? $_SESSION["userid"] : '';
 $username = (isset($_SESSION["username"]) && $_SESSION["username"] != '') ? $_SESSION["username"] : '';
@@ -214,7 +214,7 @@ if (isset($_POST["mode"]) && $_POST["mode"] === "delete") {
 		echo "<script>alert('내용입력요망!');history.go(-1);</script>";
 		exit;
 	}
-	//"덧글을 다는사람은 로그인을 해야한다." 말한것이다.
+	//"댓글을 다는사람은 로그인을 해야한다." 말한것이다.
 	$userid = $_SESSION['userid'];
 
 	$q_userid =  $userid;

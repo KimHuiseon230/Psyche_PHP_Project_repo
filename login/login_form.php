@@ -1,68 +1,56 @@
-<!DOCTYPE html>
-<html lang="ko">
+<?php
+// 공통적으로 처리하는 부분
+$js_array = ['/js/login.js'];
+$css_array = ['/css/login.css'];
+$title = "로그인";
+$menu_code = "login";
 
-<head>
-  <meta charset="utf-8">
-  <title>로그인 화면</title>
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/common.css' ?>">
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/message/css/message.css' ?>">
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/slide.css?er=1' ?>">
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/header.css' ?>">
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/board.css' ?>">
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/login.css' ?>">
-  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/message.js' ?>"></script>
-  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/slide.js' ?>"></script>
-  <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/login.js' ?>"></script>
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/css/member.css?v=<?= date('Ymdhis') ?>">
-  <!-- 구글폰트 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
-</head>
-
-<body>
+//헤더부분 시작
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_header.php";
+?>
+<!-- 메인부분 시작 -->
+<section>
   <header>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php"; ?>
+    <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/login.js' ?>"></script>
+    <!-- <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/css/login.css?v=<?= date('Ymdhis') ?>"> -->
   </header>
-  <section>
 
-    <body>
-      <div class="page-container">
-        <div class="login-form-container shadow">
-          <div class="login-form-right-side">
-            <div class="top-logo-wrap">
-            </div>
-            <h1>How does a login system work?</h1>
-            <p>In computer security, logging in is the process by which an individual gains access to a computer system by identifying and authenticating themselves.</p>
+  <body>
+    <div class="page-container">
+      <div class="login-form-container shadow">
+        <div class="login-form-right-side">
+          <div class="top-logo-wrap">
           </div>
-          <div class="login-form-left-side">
-            <div class="login-top-wrap">
-              <span>Don't have an account?</span>
-              <button class="create-account-btn shadow-light">Create Profile</button>
-            </div>
-            <div class="login-input-container" id="login_form">
-              <form name="login_form" method="post" action="login.php">
-                <div class="login-input-wrap input-id">
-                  <i class="far fa-envelope"></i>
-                  <input type="text" name="id" placeholder="id" class="container text-center mt-3">
-                </div>
-                <div class="login-input-wrap input-password">
-                  <i class="fas fa-key"></i>
-                  <input type="password" name="pass" id=" pass" placeholder="Password" class="container text-center mt-3">
-                </div>
-            </div>
-            <div class="login-btn-wrap" id="login_btn">
-              <input class="login-btn" id="logins" type="button" value="Log In">
-              <a href="#">Forgot password?</a>
-            </div>
-            </form><!-- login_form -->
-          </div><!-- login-input-container -->
+          <h1>How does a login system work?</h1>
+          <p>In computer security, logging in is the process by which an individual gains access to a computer system by identifying and authenticating themselves.</p>
         </div>
+        <div class="login-form-left-side">
+          <div class="login-top-wrap">
+            <span>Don't have an account?</span>
+            <button class="create-account-btn shadow-light">Create Profile</button>
+          </div>
+          <div class="login-input-container" id="login_form">
+            <form name="login_form" method="post" action="login.php">
+              <div class="login-input-wrap input-id">
+                <i class="far fa-envelope"></i>
+                <input type="text" name="id" placeholder="id" class="container text-center mt-3">
+              </div>
+              <div class="login-input-wrap input-password">
+                <i class="fas fa-key"></i>
+                <input type="password" name="pass" id=" pass" placeholder="Password" class="container text-center mt-3">
+              </div>
+          </div>
+          <div class="login-btn-wrap" id="login_btn">
+            <input class="login-btn" id="logins" type="button" value="Log In">
+            <a href="#">Forgot password?</a>
+          </div>
+          </form><!-- login_form -->
+        </div><!-- login-input-container -->
       </div>
-  </section>
-  <footer>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
-  </footer>
-</body>
-
-</html>
+    </div>
+</section>
+<!-- 메인부분 종료 -->
+<!-- 푸터부분 시작 -->
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_footer.php"
+?>

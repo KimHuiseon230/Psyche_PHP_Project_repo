@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 header("Content-type: application/vnd.ms-excel; charset=utf-8");
 header("Content-Disposition: attachment; filename = event.xls");     //filename = 저장되는 파일명을 설정합니다.
 header("Content-Description: PHP8 Generated Data");

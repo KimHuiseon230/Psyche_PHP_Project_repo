@@ -14,7 +14,7 @@ if ($num == '' && $page == '') {
 $subject = (isset($_POST["subject"]) && $_POST["subject"] != '') ? $_POST["subject"] : '';
 $content = (isset($_POST["content"]) && $_POST["content"] != '') ? $_POST["content"] : '';
 
-include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 $sql = "update event set subject=:subject, content=:content ";
 $sql .= " where num=:num";
 

@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 $id = (isset($_POST["id"]) && $_GET["id"] != '') ? $_GET["id"] : '';
 $userid    = (isset($_SESSION['userid']) && $_SESSION['userid'] != "") ? $_SESSION['userid'] : "";
 $userlevel = (isset($_SESSION['userlevel']) && $_SESSION['userlevel'] != "") ? $_SESSION['userlevel'] : "";
@@ -25,7 +25,7 @@ $username  = (isset($_SESSION['username']) && $_SESSION['username'] != "") ? $_S
 
 <body>
 	<header>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_header.php"; ?>
 		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/slide.php"; ?>
 	</header>
 	<section>
@@ -34,7 +34,7 @@ $username  = (isset($_SESSION['username']) && $_SESSION['username'] != "") ? $_S
 				게시판 > 글 쓰기
 			</h3>
 			<?php
-			include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+			include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 
 
 			$num = (isset($_GET["num"]) && $_GET["num"] != '') ? $_GET["num"] : '';

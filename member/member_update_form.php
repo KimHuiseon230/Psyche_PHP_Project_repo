@@ -22,9 +22,9 @@
 
 <body>
   <header>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_header.php"; ?>
     <?php
-    include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+    include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
     $num = (isset($_SESSION['num']) && $_SESSION['num'] != "" && is_numeric($_SESSION['num'])) ? $_SESSION['num'] : "";
     if ($num == "") {
       die("<script>
@@ -119,7 +119,7 @@
     </div>
   </section>
   <footer>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_footer.php"; ?>
   </footer>
   <script>
     const email2 = document.querySelector("#email2")

@@ -20,10 +20,10 @@
 <body>
     <header>
         <?php
-        include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php";
+        include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_header.php";
         include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/slide.php";
-        include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
-        include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/create_table.php";
+        include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
+        include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/create_table.php";
         include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/page_lib.php";
         create_table($conn, "event");
         ?>
@@ -46,7 +46,7 @@
 
                 $page = (isset($_GET["page"]) && is_numeric($_GET["page"]) && $_GET["page"] != "") ? $_GET["page"] : 1;
 
-                include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+                include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
                 $sql = "select count(*) as cnt from event order by num desc";
                 $stmt = $conn->prepare($sql);
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -129,7 +129,7 @@
         </div>
     </section>
     <footer>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_footer.php"; ?>
     </footer>
 </body>
 

@@ -1,74 +1,54 @@
 <!DOCTYPE html>
 <html>
+<style>
+	.image-with-caption {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		max-width: 500px;
+		margin: 100px auto;
+		justify-content: center;
 
-<head>
-	<meta charset="utf-8">
-	<title>게시판 메인 화면 </title>
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/header.css' ?>">
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/css/slide.css?v=<?= date('Ymdhis') ?>">
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/common.css' ?>">
-	<!-- 공통 선언 js -->
-	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/slide.js' ?>"></script>
-	<!-- 따로 선언 -->
-	<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/event.css' ?>">
-	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/slide.js' ?>"></script>
-	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/member.js' ?>"></script>
-	<script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/event.js' ?>"></script>
-	<!-- CSS only -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-	<!-- JavaScript Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-	<style>
-		.image-with-caption {
-			display: flex;
-			align-items: center;
-			gap: 10px;
-			max-width: 500px;
-			margin: 100px auto;
-			justify-content: center;
+	}
 
-		}
+	.image-with-caption img {
+		flex: 0 0 auto;
+		max-width: 600px;
+		height: auto;
+		margin-right: 10px;
+	}
 
-		.image-with-caption img {
-			flex: 0 0 auto;
-			max-width: 600px;
-			height: auto;
-			margin-right: 10px;
-		}
+	.image-with-caption figcaption {
+		font-weight: bold;
+		margin-bottom: 5px;
+		width: 450px;
+	}
 
-		.image-with-caption figcaption {
-			font-weight: bold;
-			margin-bottom: 5px;
-			width: 450px;
-		}
+	.image-with-caption p {
+		margin: 0;
+	}
 
-		.image-with-caption p {
-			margin: 0;
-		}
+	.row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-		.row {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.content {
-			width: 600px;
-			font-weight: 700;
-			font-size: 32px;
-			line-height: 42px;
-		}
-	</style>
+	.content {
+		width: 600px;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 42px;
+	}
+</style>
 </head>
 
 
 <body>
 	<header>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php";
-		include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
-		include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/create_table.php";
-		create_table($conn, "message");
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_header.php";
+		include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 		?>
 	</header>
 	<div class="container ">
@@ -120,7 +100,7 @@
 		</div>
 	</div>
 	<footer>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_footer.php"; ?>
 	</footer>
 </body>
 

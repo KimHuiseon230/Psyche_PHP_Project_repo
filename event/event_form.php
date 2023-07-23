@@ -24,11 +24,10 @@
 <body>
 	<header>
 		<?php
-		include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php";
-		include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
-		include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/create_table.php";
+		include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_header.php";
+		include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
+		include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/create_table.php";
 		create_table($conn, "event");
-
 		?>
 
 	</header>
@@ -42,7 +41,7 @@
 	<section>
 
 		<?php
-		include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+		include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 
 		$mode = (isset($_POST["mode"]) && $_POST["mode"] != '') ? $_POST["mode"] : "insert";
 		$subject = "";
@@ -121,7 +120,7 @@
 		</div> <!-- event_box -->
 	</section>
 	<footer>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_footer.php"; ?>
 	</footer>
 </body>
 
