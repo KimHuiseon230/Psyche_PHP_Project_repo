@@ -14,9 +14,7 @@
      <!-- 네비게이션 -->
      <div class="slideshow_nav">
        <a href="#" class="next"><i class="fa-sharp fa-solid fa-caret-right"></i></a>
-       <a href="#" class="prev">
-         <left class="fa-sharp fa-solid fa-caret-left"></i>
-       </a>
+       <a href="#" class="prev"><left class="fa-sharp fa-solid fa-caret-left"></i></a>
      </div>
      <!-- 인디케이터 -->
      <div class="indicator">

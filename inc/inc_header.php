@@ -19,7 +19,7 @@ $userpoint = (isset($_SESSION['userpoint']) && $_SESSION['userpoint'] != "") ? $
   <meta charset="utf-8">
   <title><?= (isset($title) && $title != '') ? $title : 'TEST' ?></title>
   <!-- 공통 선언 css -->
-  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/header.css' ?>">
+  <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/css/header.css?v=<?= date('Ymdhis') ?>">
   <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/css/slide.css?v=<?= date('Ymdhis') ?>">
   <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/common.css' ?>">
   <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/main.css' ?>">
@@ -29,6 +29,7 @@ $userpoint = (isset($_SESSION['userpoint']) && $_SESSION['userpoint'] != "") ? $
   <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/message.css' ?>">
   <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/css/board.css' ?>">
   <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/css/toggle.css?v=<?= date('Ymdhis') ?>">
+
   <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/product_board/board.css' ?>">
   <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/product_board/js/board.js' ?>"></script>
   <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/message.js' ?>"></script>
@@ -50,12 +51,18 @@ $userpoint = (isset($_SESSION['userpoint']) && $_SESSION['userpoint'] != "") ? $
     }
     ?>
   </script>
+  <!-- <style>
+    *{
+      border: 1px dotted black;
+    }
+  </style> -->
 </head>
 <!-- 헤더 영역의 로고와 회원가입/로그인 표시 영역 -->
-<div class="">
-  <!-- 로고 영역 -->
+<!-- 로고 영역 -->
+
+<div class="container">
   <div class="row justify-content-center">
-    <div class="col-auto">
+    <div class="col-auto ">
       <a class="navbar-brand" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/index.php" id="title">
         <img src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/img/main_log_black.png' ?>" alt="로고 이미지" id="icon">
       </a>
@@ -85,19 +92,18 @@ $userpoint = (isset($_SESSION['userpoint']) && $_SESSION['userpoint'] != "") ? $
       </nav>
     </div>
     <!-- 2. 회원가입/로그인 버튼 표시 영역 -->
-    <ul id="top_menu">
+    <ul id="top_menu" class="list-inline">
       <!-- 로그인 안되었을 때 -->
       <?php if (!$userid) {  ?>
         <li><a href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/member/member_form.php' ?>">회원가입</a></li>
         <li> | </li>
         <li><a href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/login/login_form.php' ?>">로그인</a></li>
       <?php } else { ?>
-        <?= $username . "님" ?>
+        <strong> <?= "안녕하세요! " . $username . "님 :D" ?></strong>
         <li><a href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/login/logout.php' ?>">로그아웃</a></li>
         <li> | </li>
         <li><a href="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/member/member_update_form.php' ?>">회원수정</a></li>
       <?php } ?>
-
       <!-- 관리자모드로 로그인되었을 때 추가로.. -->
       <?php if ($userlevel == 1) { ?>
         <li> | </li>
@@ -107,3 +113,4 @@ $userpoint = (isset($_SESSION['userpoint']) && $_SESSION['userpoint'] != "") ? $
       <?php } ?>
     </ul>
   </div>
+</div>

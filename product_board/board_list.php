@@ -67,8 +67,8 @@ $menu_code = "board";
                     $file_name_0 = $row['file_name'];
                     $file_copied_0 = $row['file_copied'];
                     $file_type_0 = $row['file_type'];
-                    $image_width = 300;
-                    $image_height = 200;
+                    $image_width = 250;
+                    $image_height = 250;
                 ?>
                     <li>
                         <span>

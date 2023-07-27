@@ -1,15 +1,16 @@
-/* 제품 글쓰기(board_form.php) */
-/* #board_box {
+/* 게시판 글쓰기(board_form.php) */
+#board_box {
 	position: relative;
 	width: 800px;
 	margin: 0 auto;
-} */
+}
 
 #board_box h3 {
 	margin-top: 30px;
 	padding: 10px;
 	border-bottom: solid 2px #516e7f;
 	font-size: 20px;
+	word-break: break-all;
 }
 
 #board_form span {
@@ -69,22 +70,20 @@
 }
 
 #board_box .buttons form {
-	display: inline-block;
+	display: inline;
 }
 
-/* 제품 목록보기(board_list.php) */
+/* 게시판 목록보기(board_list.php) */
 #board_list li {
 	padding: 10px 0;
 	border-bottom: solid 1px #dddddd;
 	display: inline-block;
-	text-align: center;
-	margin: 20px;
+	margin: 6px;
 }
 
 #board_list span {
 	display: inline-block;
 	text-align: center;
-
 }
 
 #board_list .col1 {
@@ -121,9 +120,9 @@
 	display: inline;
 }
 
-/* 제품 내용보기(board_view.php) */
+/* 게시판 내용보기(board_view.php) */
 #board_box {
-	width: 800px;
+	width: 1000px;
 	margin: 0 auto;
 }
 
@@ -152,21 +151,4 @@
 	padding: 5px 20px;
 	margin: 15px 0 40px 720px;
 	cursor: pointer;
-}
-
-#re_content {
-	width: 700px;
-	height: 56px;
-}
-
-.dap_ins {
-	margin-top: 50px;
-}
-
-.re_bt {
-	position: absolute;
-	width: 100px;
-	height: 56px;
-	font-size: 16px;
-	margin-left: 10px;
 }

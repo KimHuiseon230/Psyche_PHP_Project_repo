@@ -17,7 +17,7 @@
 
 <body>
 	<header>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_header.php"; ?>
 		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/slide.php"; ?>
 	</header>
 	<section>
@@ -25,7 +25,7 @@
 			<h3 class="title">
 				<?php
 				//먼저 선언을 해야하는 파일들
-				include_once  $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+				include_once  $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 				$mode = (isset($_GET['mode']) && $_GET['mode'] != '') ? (int)$_GET['mode'] : '';
 				$num = (isset($_GET['num']) && $_GET['num'] != '') ? (int)$_GET['num'] : '';
 
@@ -81,7 +81,7 @@
 		</div> <!-- message_box -->
 	</section>
 	<footer>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_footer.php"; ?>
 	</footer>
 </body>
 

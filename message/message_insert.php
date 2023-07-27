@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
 
 $send_id = (isset($_POST['send_id']) && $_POST['send_id'] != '') ? $_POST['send_id'] : '';
 $rv_id = (isset($_POST['rv_id']) && $_POST['rv_id'] != '') ? $_POST['rv_id'] : '';

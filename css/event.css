@@ -1,4 +1,4 @@
-/* 이벤트 글쓰기(event_form.php) */
+/* 게시판 글쓰기(event_form.php) */
 #event_box {
   position: relative;
   width: 800px;
@@ -10,6 +10,7 @@
   padding: 10px;
   border-bottom: solid 2px #516e7f;
   font-size: 20px;
+  word-break: break-all;
 }
 
 #event_form span {
@@ -20,12 +21,16 @@
   width: 150px;
 }
 
+#event_form ul {
+  float: left;
+}
+
 #event_form li {
   padding: 12px;
   border-bottom: solid 1px #dddddd;
 }
 
-#event_form input {
+#event_form input:not([type=checkbox]):not([type=file]) {
   width: 500px;
   height: 25px;
 }
@@ -64,10 +69,16 @@
   cursor: pointer;
 }
 
-/* 이벤트 목록보기(event_list.php) */
+#event_box .buttons form {
+  display: inline;
+}
+
+/* 게시판 목록보기(event_list.php) */
 #event_list li {
   padding: 10px 0;
   border-bottom: solid 1px #dddddd;
+  display: inline-block;
+  margin: 6px;
 }
 
 #event_list span {
@@ -109,9 +120,9 @@
   display: inline;
 }
 
-/* 이벤트 내용보기(event_view.php) */
+/* 게시판 내용보기(event_view.php) */
 #event_box {
-  width: 850px;
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -139,5 +150,19 @@
 #view_content li:nth-child(3) button {
   padding: 5px 20px;
   margin: 15px 0 40px 720px;
+  cursor: pointer;
+}
+#write_button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#write_button .buttons li {
+  display: inline;
+  margin-left: 10px;
+}
+
+#write_button .buttons button {
+  padding: 5px 10px;
   cursor: pointer;
 }

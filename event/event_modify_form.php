@@ -90,7 +90,7 @@ $username  = (isset($_SESSION['username']) && $_SESSION['username'] != "") ? $_S
 		</div> <!-- event_box -->
 	</section>
 	<footer>
-		<?php include "footer.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_footer.php"; ?>
 	</footer>
 </body>
 

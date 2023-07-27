@@ -9,7 +9,7 @@ $menu_code = "login";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_header.php";
 ?>
 <!-- 메인부분 시작 -->
-<section>
+<section >
   <header>
     <script src="http://<?= $_SERVER['HTTP_HOST'] . '/Psyche_PHP_Project/js/login.js' ?>"></script>
     <!-- <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/Psyche_PHP_Project/css/login.css?v=<?= date('Ymdhis') ?>"> -->

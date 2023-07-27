@@ -22,7 +22,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php
 // create_table($conn, "message");
 ?>
 <!-- 메인부분 시작 -->
-<section class="mb-5 p-5" style="height: calc(100vh - 330px);">
+<section class="mb-5 p-5">
   <div id="message_box">
     <h3>
       <?php

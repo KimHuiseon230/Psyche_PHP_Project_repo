@@ -36,7 +36,7 @@
 
 <body>
   <header>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/header.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_header.php"; ?>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/slide.php"; ?>
   </header>
 
@@ -54,7 +54,7 @@
           </script>
         ");
       }
-      include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/db_connect.php";
+      include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
       $sql = "select * from message where num=:num";
       $stmt = $conn->prepare($sql);
       $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -110,7 +110,7 @@
     </div> <!-- message_box -->
     </section>
     <footer>
-      <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/footer.php"; ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_footer.php"; ?>
     </footer>
 </body>
 

@@ -9,7 +9,7 @@
          <article id="latest">
            <ul></ul>
          </article>
-         <section>
+         <section >
            <div id="main_img_bar">
            </div>
            <div id="main_content">

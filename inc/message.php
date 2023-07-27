@@ -102,7 +102,7 @@ class Message
   public function
   sel_member_id_info($msg_id)
   {
-    $sql = "select name from `member` where `id`=:msg_id";
+    $sql = "select name from `members` where `id`=:msg_id";
     $stmt = $this->conn->prepare($sql);
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
     $stmt->bindParam(':msg_id', $msg_id);

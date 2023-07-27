@@ -20,12 +20,15 @@
 <body>
     <header>
         <?php
+        $userlevel = (isset($_SESSION['userlevel']) && $_SESSION['userlevel'] != "") ? $_SESSION['userlevel'] : "";
+
         include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/inc_header.php";
         include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/slide.php";
         include_once $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/db_connect.php";
         include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/inc/create_table.php";
         include $_SERVER['DOCUMENT_ROOT'] . "/Psyche_PHP_Project/common/page_lib.php";
         create_table($conn, "event");
+
         ?>
     </header>
     <section>
@@ -102,23 +105,14 @@
             </ul>
 
             <ul class="buttons">
-                <li><button type="button" class="btn btn-outline-primary" onclick="location.href='event_list.php'">목록</button></li>
-                <li>
-                    <?php
-                    if ($userid) {
-                    ?>
-                        <button type="button" class="btn btn-outline-primary" onclick="location.href='event_form.php'">글쓰기</button>
-                    <?php
-                    } else {
-                    ?>
-                        <a href="javascript:alert('로그인 후 이용해 주세요!')"><button class="btn btn-outline-primary">글쓰기</button></a>
-                    <?php
-                    }
-
-                    ?>
-                    <button type="button" class="btn btn-outline-info" id="btn_excel">엑셀로 저장</button>
-
-                </li>
+                
+                <!-- // 사용자의 ID가 "admin"인지 확인 -->
+                <?php if ($userlevel === 1) { ?>
+                    <!-- <button type="button" class="btn btn-outline-primary" onclick="location.href='event_list.php'">목록</button></li> -->
+                    <button type="button"  onclick="location.href='event_form.php'">글쓰기</button>
+                    <button type="button"  id="btn_excel">엑셀로 저장</button>
+                    <?php } else ?> 
+                <button type="button" onclick="location.href='event_list.php'">목록</button></li>
             </ul>
         </div>
         <div class="container d-flex justify-content-center aling-items-start gap-3 mb-3">

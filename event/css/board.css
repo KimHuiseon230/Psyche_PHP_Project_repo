@@ -55,10 +55,11 @@
     left: 166px;
 }
 
-/* #board_box .buttons {
+#board_box .buttons {
     text-align: right;
     margin: 20px 0 40px 0;
-} */
+    
+}
 
 #board_box .buttons li {
     display: inline;
